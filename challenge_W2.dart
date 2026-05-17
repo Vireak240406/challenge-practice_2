@@ -133,15 +133,61 @@
 //   print(t2);
 // }
 
-//challenge6
-class Distance{
-    final double x;
+// //challenge6
+// class Distance{
+//     final double x;
 
-    Distance({required this.x}){}
+//     Distance({required this.x}){}
+
+//     String toString(){
+//         while (x<=100) {
+//             return"m=x*100";
+          
+//         }if(x>=100&&x<=100){
+//             return"m=*x";
+
+
+//         }else{
+//          print(x=x);   
+//         }
+//         }
+        
+//     }
 
     
 
-}
+// }
 
-// Practice1
+// // Practice1
 
+
+
+// class Employee {
+//   final String name;
+//   final double baseSalary;
+//   final List<Skill> skills;
+//   final Address address;
+//   final int yearsOfExperience;
+
+//     const Employee({
+//     required this.name,
+//     required this.baseSalary,
+//     required this.skills,
+//     required this.address,
+//     required this.yearsOfExperience,
+//   }){}
+// }
+
+// enum Skill{FlUTER,DART,OTHER}
+
+// class Address {
+//   final String street;
+//   final String city;
+//   final String zipCode;
+
+//   const Address({
+//     required this.street,
+//     required this.city,
+//     required this.zipCode,
+//   });
+// }
