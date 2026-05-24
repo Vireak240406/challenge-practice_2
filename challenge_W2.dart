@@ -142,52 +142,54 @@
 //     String toString(){
 //         while (x<=100) {
 //             return"m=x*100";
-          
+
 //         }if(x>=100&&x<=100){
 //             return"m=*x";
 
-
 //         }else{
-//          print(x=x);   
+//          print(x=x);
 //         }
 //         }
-        
+
 //     }
 
+// }
+
+// Practice1
+
+enum Skill { FLUTTER, DART, OTHER }
+
+class Employee {
+  String name;
+  double baseSalary;
+  String address;
+  String yearsOfExperience;
+  List<String> skill;
+
+  Employee(
+    this.name,
+    this.baseSalary,
+    this.address,
+    this.yearsOfExperience,
+    this.skill,
+  );
+
+  void printDetails() {
+    print('Employee: $name, Base Salary: \$${baseSalary}');
+  }
+}
+
+class Address{
+    String street;
+    String city;
+    String zipCode;
     
+}
 
-// }
+void main() {
+  var emp1 = Employee('Sokea', 40000);
+  emp1.printDetails();
 
-// // Practice1
-
-
-
-// class Employee {
-//   final String name;
-//   final double baseSalary;
-//   final List<Skill> skills;
-//   final Address address;
-//   final int yearsOfExperience;
-
-//     const Employee({
-//     required this.name,
-//     required this.baseSalary,
-//     required this.skills,
-//     required this.address,
-//     required this.yearsOfExperience,
-//   }){}
-// }
-
-// enum Skill{FlUTER,DART,OTHER}
-
-// class Address {
-//   final String street;
-//   final String city;
-//   final String zipCode;
-
-//   const Address({
-//     required this.street,
-//     required this.city,
-//     required this.zipCode,
-//   });
-// }
+  var emp2 = Employee('Ronan', 45000);
+  emp2.printDetails();
+}
