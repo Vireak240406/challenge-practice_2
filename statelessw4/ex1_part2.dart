@@ -12,8 +12,13 @@ class MyHobbyCard extends StatelessWidget {
   final Color backgroundColor;
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: backgroundColor,
+    return Container(
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      margin: EdgeInsets.all(20),
+      // color: backgroundColor,
       child: Padding(
         padding: EdgeInsets.all(40),
         child: Row(
@@ -27,36 +32,36 @@ class MyHobbyCard extends StatelessWidget {
   }
 }
 
-  void main() {
-    runApp(
-      MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.white,
-            title: Text(
-              "My Hobbies",
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          title: Text(
+            "My Hobbies",
+            style: TextStyle(color: Colors.black, fontSize: 30),
           ),
-          body: Padding(
-            padding: EdgeInsets.all(50),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                MyHobbyCard(
-                  title: 'Travelling',
-                  icon: Icons.travel_explore,
-                  backgroundColor: Colors.green,
-                ),
-                MyHobbyCard(
-                  title: 'Skating',
-                  icon: Icons.skateboarding,
-                  backgroundColor: Colors.blue,
-                ),
-              ],
-            ),
+        ),
+        body: Padding(
+          padding: EdgeInsets.all(50),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              MyHobbyCard(
+                title: 'Travelling',
+                icon: Icons.travel_explore,
+                backgroundColor: Colors.green,
+              ),
+              MyHobbyCard(
+                title: 'Skating',
+                icon: Icons.skateboarding,
+                backgroundColor: Colors.blue,
+              ),
+            ],
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
+}

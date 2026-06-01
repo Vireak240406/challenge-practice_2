@@ -17,8 +17,12 @@ void main() {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Card(
-                color: Colors.green,
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                margin: EdgeInsets.all(20),
                 child: Padding(
                   padding: EdgeInsets.all(50),
                   child: Row(
@@ -34,8 +38,12 @@ void main() {
                   ),
                 ),
               ),
-              Card(
-                color: Colors.blueGrey,
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                margin: EdgeInsets.all(20),
                 child: Padding(
                   padding: EdgeInsets.all(50),
                   child: Row(
